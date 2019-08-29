@@ -3,11 +3,21 @@
  */
 // Essential color
 $light-grey: #f4f3f1;
+$black: #333333;
+$white: #ffffff;
+$orange: #f2792c;
+$teal: #00a3a1;
+$warm-grey: #999999;
 
 // Named color
 $kpmg-blue: #00338D;
-$kpmg-blue--light: #0091da;
-$kpmg-blue--medium: #185FAF;
+$kpmg-blue--light: #005eb8;
+$kpmg-blue--medium: #0091da;
+
+// Contextual color
+$background-color: #f9f9f9;
+$font-body-color: $black;
+
 
 /**
  * Easing
@@ -19,6 +29,11 @@ $easeInSine   : cubic-bezier(0.470, 0.000, 0.745, 0.715);
 /**
  * Fonts
  */
+
+// Essential font stacks
 $arial-font-stack: Arial, Helvetica Neue, Helvetica, sans-serif;
 $segoe-ui-font-stack: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 $kpmg-font-stack: "KPMG", Arial Narrow, Arial, sans-serif;
+
+// Named fonts
+$font-body: $arial-font-stack;
