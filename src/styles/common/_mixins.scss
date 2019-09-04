@@ -1,0 +1,8 @@
+
+
+@mixin root-container() {
+	$padding: 2em;
+	max-width: em(1200) + $padding*2;
+	padding-right: $padding;
+	padding-left: $padding;
+}

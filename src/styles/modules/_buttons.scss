@@ -1,0 +1,83 @@
+/* Check button match button type */
+@function isButton($inputType, $matchType) {
+  @if str-index($inputType, $matchType) and str-length($inputType) == str-length($matchType) {
+    @return true;
+  } @else {
+    @return false;
+  }
+}
+
+/* Build the button prototype */
+$button-root-base: $base-unit;
+@mixin build-button($type: 'construct', $button-base: $button-root-base) {
+  
+  @if(str-index($type, 'construct')) {
+    display: inline-block;
+    padding: em(12, $button-base);
+    width: auto;
+    height: auto;
+    -webkit-appearance: none;
+    // Style
+    border: 0;
+    cursor: pointer;
+    font-family: $font-body;
+    font-size: em($button-base);
+    line-height: 1.2;
+    text-align: center;
+    transition: color 0.2s ease-out, background 0.2s ease-out;
+    max-width: em(270px, $button-base);
+    min-width: em(130, $button-base);
+    border-radius: 2px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  
+  // Action
+  @if(isButton($type, 'primary')) {
+    color: white!important;
+    background: $kpmg-blue--light;
+    
+    &:hover{
+      background: rgba($kpmg-blue--light, .7);
+    }
+  }
+  @if(isButton($type, 'secondary')) {
+    color: $kpmg-blue--light!important;
+    background: white;
+    border: 1px solid $kpmg-blue--light;
+    
+    &:hover{
+      color: $kpmg-blue--light!important;
+      background: rgba($kpmg-blue--light, .1);
+      border: 1px solid $kpmg-blue--light;
+    }
+  }
+
+}
+
+// Update this map if adding more button types
+$buttons-map: (
+  'primary',
+  'secondary'
+);
+
+
+/*====================================================
+=     Below are all auto-generated, no need to edit       
+====================================================*/
+/* This is to make the output css smaller */
+// Auto generate from buttons-map, don't need to update this unless update logics
+%button-base {
+  @include build-button();
+}
+
+@each $button-name in $buttons-map {
+  %button-#{$button-name} {
+    @extend %button-base;
+  }
+  %button-#{$button-name} {
+    @include build-button($button-name);
+  }
+}

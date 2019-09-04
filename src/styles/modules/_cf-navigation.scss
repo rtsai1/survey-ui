@@ -1,5 +1,38 @@
-@import "~@styles/common/variables";
+.cf-navigation {
+	background: none;
+}
 
 .cf-navigation-next, .cf-navigation-ok {
-	background: $kpmg-blue--light;
+	@extend %button-primary;
+}
+
+.cf-navigation-back {
+	@extend %button-secondary;
+	position: relative;
+	text-indent: -999999px;
+
+	&::before {
+		content: "Back";
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-indent: 0;
+	}
+}
+
+.cf-navigation-next {
+	position: relative;
+	text-indent: -999999px;
+
+	&::before {
+		content: "Next";
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-indent: 0;
+	}
 }

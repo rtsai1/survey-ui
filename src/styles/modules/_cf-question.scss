@@ -1,12 +1,12 @@
 .cf-question {
 	box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.16);
   background-color: white;
-  margin-bottom: 13.5/ $base-unit+em;
+  margin-bottom: em(21);
 
   &__text {
   	font-family: $font-body;
   	font-weight: bold;
-  	font-size: 14/$base-unit+em;
+  	font-size: em(14);
   	color: $font-body-color;
   }
 }
