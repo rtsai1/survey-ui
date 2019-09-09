@@ -1,0 +1,43 @@
+.cf-carousel {
+	
+	// Title text
+	&__text {
+		font-size: em(30);
+		line-height: 1.2;
+		color: $font-body-color;
+	}
+	
+	// Control
+	&__control-row {
+		align-items: center;
+		margin-bottom: em(27);
+	}
+	&__control {
+		margin-bottom: em(48);
+	}
+
+	&__paging-item {
+		background: none;
+    width: 20px;
+    height: 20px;
+    margin: 0 em(8);
+		border: solid 2px $medium-grey;
+		border-radius: 50%;
+
+		&:hover {
+			border-color: $kpmg-blue--medium;
+		}
+
+		&::before,
+		&:hover::before {
+			display: none;
+		}
+
+		&--current {
+			border: none;
+			background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%20510%20510%22%3E%3Cpath%20d%3D%22M255%200C114.75%200%200%20114.75%200%20255s114.75%20255%20255%20255%20255-114.75%20255-255S395.25%200%20255%200zm-51%20382.5L76.5%20255l35.7-35.7%2091.8%2091.8%20193.8-193.8%2035.7%2035.7L204%20382.5z%22%20data-original%3D%22%23000000%22%20class%3D%22active-path%22%20data-old_color%3D%22%23000000%22%20fill%3D%22%23005EB8%22%2F%3E%3C%2Fsvg%3E);
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+	}
+}
