@@ -2,6 +2,7 @@
 @import "~@/styles/common/variables";
 @import "~@/styles/common/mixins";
 @import "~@/styles/common/functions";
+@import "~@/styles/common/animations";
 @import "~@/styles/common/typography";
 
 // Base
@@ -25,6 +26,8 @@
 @import "~@/styles/modules/cf-question";
 @import "~@/styles/modules/cf-single-answer";
 @import "~@/styles/modules/cf-text-box";
+@import "~@/styles/modules/cf-grid";
+@import "~@/styles/modules/cf-multi-answer";
 
 /* Buttons */
 @import "~@/styles/modules/cf-navigation";
