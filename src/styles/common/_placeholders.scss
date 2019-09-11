@@ -1,0 +1,21 @@
+// Radio button
+%radio-button-container {
+	background-image: url($radio-button-unselected);
+	background-size: 20px;
+  line-height: 20px;
+  min-height: 20px;
+}
+%radio-button-container--selected {
+	background-image: url($radio-button-selected);
+}
+
+// Checkbox
+%checkbox-container {
+	background-image: url($checkbox-unselected);
+	background-size: 20px;
+  line-height: 20px;
+  min-height: 20px;
+}
+%checkbox-container--selected {
+	background-image: url($checkbox-selected);
+}
