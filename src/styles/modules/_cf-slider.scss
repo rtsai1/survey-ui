@@ -1,0 +1,31 @@
+.cf-slider {
+	&__no-value {
+		border: 1px dashed $kpmg-blue--medium;
+	}
+
+	&__handle {
+		background: $kpmg-blue--medium;
+	}
+	
+	// Track
+	&__track {
+		background: rgba($black, .1);
+	}
+}
+
+/**
+ * Vertical
+ */
+.cf-slider--vertical, 
+.cf-slider----vertical-rtl {
+	
+	.cf-slider__track-area, 
+	.cf-slider__track-area {
+		padding: 0 2.5em 0 1em;
+	}
+
+	.cf-slider__handle--no-value, 
+	.cf-slider__handle--no-value {
+		background: url($arrow-down-circle) center/100% no-repeat;
+	}
+}

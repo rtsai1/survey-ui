@@ -16,19 +16,23 @@
 
 /* Reusables */
 @import "~@/styles/modules/buttons";
+@import "~@/styles/modules/cf-slider";
+@import "~@/styles/modules/cf-carousel";
+@import "~@/styles/modules/cf-text-box";
 
 /* Page */
 @import "~@/styles/modules/cf-page";
 @import "~@/styles/modules/cf-page__main";
 @import "~@/styles/modules/cf-page__header";
 
-/* Questions */
+/* Question Answers */
 @import "~@/styles/modules/cf-question";
+@import "~@/styles/modules/cf-single-slider-question";
 @import "~@/styles/modules/cf-single-answer";
-@import "~@/styles/modules/cf-text-box";
 @import "~@/styles/modules/cf-grid";
 @import "~@/styles/modules/cf-multi-answer";
-@import "~@/styles/modules/cf-carousel";
+
+
 
 /* Navigations */
 @import "~@/styles/modules/cf-navigation";

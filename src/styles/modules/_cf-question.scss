@@ -9,4 +9,9 @@
   	font-size: em(14);
   	color: $font-body-color;
   }
+
+  // Wrapper
+	&--carousel-grid {
+		padding: 2em;
+	}
 }
