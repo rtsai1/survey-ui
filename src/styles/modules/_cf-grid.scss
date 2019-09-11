@@ -1,13 +1,11 @@
-.cf-grid {
-	.cf-grid-answer__text {
-		line-height: 1.5;
-	}
+
+
+/* Answer text */
+.cf-grid-answer__text {
+	line-height: 1.5;
 }
 
-
-/**
- * Radio buttons
- */
+/* Grid header */
 .cf-grid-answer--fake-for-panel {
 	background: $background-color;
 	border-top: solid 1px #CDCCCC;
@@ -15,6 +13,7 @@
 	margin-bottom: em(30);
 }
 
+/* Grid label */
 .cf-grid-answer__labels {
 	padding: 0;
 	
@@ -29,11 +28,24 @@
 	}
 }
 
+/* Grid scale item */
 .cf-grid-answer__scale-item {
 	@extend %radio-button-container;
   flex: 1;
 
   &--selected {
   	@extend %radio-button-container--selected;
+	}
+}
+
+
+/* Multi checkbox */
+.cf-grid-answer--multi {
+	.cf-grid-answer__scale-item {
+		@extend %checkbox-container;
+
+		&--selected {
+			@extend %checkbox-container--selected;
+		}
 	}
 }
