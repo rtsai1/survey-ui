@@ -1,0 +1,7 @@
+.cf-answer-button {
+	@extend %button-secondary;
+}
+
+.cf-answer-button.cf-answer-button--selected {
+	@extend %button-primary;
+}

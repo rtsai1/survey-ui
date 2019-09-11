@@ -36,20 +36,22 @@ $button-root-base: $base-unit;
   
   // Action
   @if(isButton($type, 'primary')) {
-    color: white!important;
+    color: white;
     background: $kpmg-blue--light;
     
-    &:hover{
-      background: rgba($kpmg-blue--light, .7);
+    &:hover {
+      color: white;
+      background: rgba($kpmg-blue--light, .85);
+      border: none;
     }
   }
   @if(isButton($type, 'secondary')) {
-    color: $kpmg-blue--light!important;
+    color: $kpmg-blue--light;
     background: white;
     border: 1px solid $kpmg-blue--light;
     
     &:hover{
-      color: $kpmg-blue--light!important;
+      color: $kpmg-blue--light;
       background: rgba($kpmg-blue--light, .1);
       border: 1px solid $kpmg-blue--light;
     }
