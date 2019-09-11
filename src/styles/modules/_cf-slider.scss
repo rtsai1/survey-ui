@@ -4,7 +4,7 @@
 	}
 
 	&__handle {
-		background: $kpmg-blue--medium;
+		background: center/50% $kpmg-blue--medium no-repeat;
 	}
 	
 	// Track
@@ -22,10 +22,5 @@
 	.cf-slider__track-area, 
 	.cf-slider__track-area {
 		padding: 0 2.5em 0 1em;
-	}
-
-	.cf-slider__handle--no-value, 
-	.cf-slider__handle--no-value {
-		background: url($arrow-down-circle) center/100% no-repeat;
 	}
 }

@@ -1,0 +1,31 @@
+.cf-dropdown {
+  max-width: 100%;
+  height: auto;
+  line-height: 1.45;
+  padding: em(12);
+  border: none;
+  font-family: $font-body;
+  font-size: 1rem;
+  appearance: none;
+  background-color: $background-color;
+  background-image: url($arrow-down);
+  background-position: right 1em center;
+  background-size: auto 45%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+  	background-color: $kpmg-blue--medium;
+  	background-image: url($arrow-down--white);
+  	color: white;
+  }
+
+  option {
+  	background: white;
+  	color: $black;
+
+  	&:checked {
+  		background: #f2f2f2;
+  	}
+  }
+}
