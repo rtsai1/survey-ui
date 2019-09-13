@@ -1,0 +1,40 @@
+.cf-hrs-grid {
+	
+
+	// Wrapper
+	&-answer__scale-container {
+		width: 100%;
+	}
+
+	&-answer__scale {
+		align-items: flex-start;
+		width: 100%;
+	}
+
+
+	&-answer__scale-item {
+		@extend %button-secondary;
+		margin-bottom: 1em;
+
+		&.cf-hrs-grid-answer__scale-item--selected {
+			@extend %button-primary;
+		}
+	}
+
+	&-answer__control {
+		flex-wrap: wrap;
+	}
+
+
+
+	// Contextual module
+	.cf-grid-layout__row {
+		flex-wrap: wrap;
+
+		&-text {
+			width: 100%;
+	    max-width: none;
+	    margin-bottom: 1em;
+		}
+	}
+}
