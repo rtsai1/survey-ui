@@ -1,0 +1,27 @@
+.cf-accordion-grid {
+	
+	&-answer {
+		margin-bottom: 1em;
+	}
+
+	&-answer__scale-item {
+		@extend %radio-button-container;
+		margin-bottom: 1em;
+
+		&:last-child {
+			margin-bottom: 1em;
+		}
+
+		&--selected {
+	  	@extend %radio-button-container--selected;
+		}
+	}
+
+	&-answer__selected-item {
+		color: $kpmg-blue--medium;
+	}
+
+	&-answer__scales {
+		padding: 0 0 0 2.2em;
+	}
+}

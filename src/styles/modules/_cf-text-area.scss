@@ -1,3 +1,8 @@
 .cf-text-area {
 	border: solid 1px $medium-grey;
+	padding: .8em;
+
+	&:focus {
+		border-color: $kpmg-blue--medium;
+	}
 }
